@@ -1,16 +1,21 @@
 from django.shortcuts import render
+from .models import Room
 
+"""
 rooms = [
     {'id':1,'name':'Vamos aprender Python!'},
     {'id':2,'name':'Vamos aprender Django!'},
     {'id':3,'name':'Vamos aprender Django Rest FrameWork!'},
 ]
+"""
 
 def home(request):
+    rooms = Room.objects.all()
     context = {'rooms': rooms}
     return render(request, 'base/home.html', context)
 
 def room(request, pk):
+    rooms = Room.objects.all()
     room = None
 
     for i in rooms:
