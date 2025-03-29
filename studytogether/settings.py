@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'studyroom.urls'
+ROOT_URLCONF = 'studytogether.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'studyroom.wsgi.application'
+WSGI_APPLICATION = 'studytogether.wsgi.application'
 
 
 # Database
